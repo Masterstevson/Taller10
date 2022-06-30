@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title></title>
+</head>
+<body onload="poner()">
+<!-- <body > -->
+
+
+<center>
+	
+
+	<ol class="ol-list">
+		<li id="1" value="1">Coco</li>
+		<li id="2" value="2">Manzana</li>
+		<li id="3" value="3">Sandía</li>
+		<li id="4" value="4">Banano</li>
+		<li id="5" value="5">Fresa</li>
+		<li id="6" value="6">Mango</li>
+		<li id="7" value="7">Naranja</li>
+		<li id="8" value="8">Mandarina</li>
+		<li id="9" value="9">Uva</li>
+		<li id="10" value="10">Pera</li>
+	</ol>
+	<select class="select" name="Tema" onchange="determinar(this)">
+					<option value="0">Tema</option>
+					<option  value="1">Azul</option>
+					<option  value="2">Naranja</option>
+	</select>
+
+</center>
+
+
+<script type="text/javascript">
+// for i=0 hasta 11 i ++
+// si documentelemntbyid i es par
+// hacer 	 documentelemntbyid.background is red
+// else
+// green
+
+
+function poner()
+{
+	for (var i = 1; i < 11; i++) 
+		{
+			if (document.getElementById(i).value % 2 ==0) 
+			{
+				// alert("par")
+				document.getElementById(i).style.backgroundColor = "yellow";
+			}else
+			{	
+				// // alert("impar")
+				document.getElementById(i).style.backgroundColor = "green";
+			}
+		}
+}
+
+function determinar(x)
+{
+
+	if (x.value== "1") 
+	{
+		for (var i = 1; i < 11; i++) 
+		{
+			if (document.getElementById(i).value % 2 ==0) 
+			{
+				// alert("par")
+				document.getElementById(i).style.backgroundColor = "#147CF1";
+			}else
+			{	
+				// // alert("impar")
+				// document.getElementById(i).style.backgroundColor = "#FF9E1B";
+			}
+		}
+	}else if (x.value== "2") 
+	{
+		for (var i = 1; i < 11; i++) 
+		{
+			if (document.getElementById(i).value % 2 ==0) 
+			{
+				// alert("par")
+				// document.getElementById(i).style.backgroundColor = "#FF9E1B";
+			}else
+			{	
+				// // alert("impar")
+				document.getElementById(i).style.backgroundColor = "orange";
+			}
+		}
+	}else if (x.value== "0") 
+	{
+		for (var i = 1; i < 11; i++) 
+		{
+			if (document.getElementById(i).value % 2 ==0) 
+			{
+				// alert("par")
+				document.getElementById(i).style.backgroundColor = "yellow";
+			}else
+			{	
+				// // alert("impar")
+				document.getElementById(i).style.backgroundColor = "green";
+			}
+		}
+	}
+
+
+	
+	
+}
+
+
+
+</script>
+</body>
+</html>

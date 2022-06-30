@@ -1,0 +1,31 @@
+.div-taller1{
+	
+	margin-left: 2%;
+	margin-right: 2%;
+	/*background-color: lightblue;*/
+	background-color: white;
+
+	border-radius: 5px;
+}
+
+.taller1-p{
+	font-size: 20px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+body{
+	/*background-color: white;*/
+		background-color: white;
+
+}
+
+.ol-talleres{
+	margin-left: 10px;
+}
+
+.separador{
+	height: 2px;
+	background-color: black;
+	width: 1300px;
+}

@@ -1,0 +1,361 @@
+.tema{
+	margin-left: 10px;
+	margin-top: -10px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-style: none;	
+
+}
+.tema,option{
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	/*border-style: none;*/
+	/*color:yellow; */
+	/*background-color:rgba(0, 0, 0, 0.7);*/
+	/*background: transparent;*/
+}
+
+/*div-estudios*/
+.div-estudios{
+	border-style: solid;
+	border-radius: 30px;
+	
+	border-color: blue;
+	/*background-color: green;*/
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulo-estudios{
+	font-size: 30px;
+	font-family: fantasy;
+	border-bottom-style:  dotted;
+	border-bottom-width: 7px;
+	width: 285px;
+}
+
+/*referencias-familiares*/
+
+.div-referencias-familiares{
+	border-style: solid;
+	border-radius: 30px;
+	
+	border-color: blue;
+	/*background-color: green;*/
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulo-referencias-familiares{
+	font-size: 30px;
+	font-family: fantasy;
+	border-bottom-style:  dotted;
+	border-bottom-width: 7px;
+	width: 300px;
+}
+
+
+
+
+
+/*estilos acordeon*/
+
+.menu-nav{
+	width: 100%;
+	/*background-color: #333;*/
+}
+.ul{
+	width: 100%;
+	padding: 0;
+	margin-top: 0;
+}
+.list{
+	width: 100%;
+	list-style: none;
+	height: 48px;
+	/*border-bottom: 1px solid white;*/
+	transition: .7s;
+	overflow: hidden;
+}
+.div-acordeon{
+	/*display: flex;*/
+	justify-content: space-between;
+	padding: 15px;
+	background-color: rgba(0, 0,0, 0.1);
+	color: dimgray;
+	cursor: pointer;
+}
+.link-acordeon{
+	text-decoration: none;
+	pointer-events: none;
+	color: black;
+}
+.acordeon-p{
+	padding: 10px;
+}
+
+.scale{
+	height: 150px;
+}
+.scale2{
+	height: 250px;
+}
+/*.rotate{
+	transform: rotate(deg) ;
+}*/
+.icono{
+	pointer-events: none;
+	margin-left: 10px;
+}
+
+
+/*referencias-personales*/
+
+.div-referencias-personales{
+	border-style: solid;
+	border-radius: 30px;
+	
+	border-color: blue;
+	/*background-color: green;*/
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulo-referencias-personales{
+	font-size: 30px;
+	font-family: fantasy;
+	border-bottom-style:  dotted;
+	border-bottom-width: 7px;
+	width: 310px;
+}
+
+
+/*experiencia-laboral*/
+
+
+.div-experiencia-laboral{
+	border-style: solid;
+	border-radius: 30px;
+	
+	border-color: blue;
+	/*background-color: green;*/
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulo-experiencia-laboral{
+	font-size: 30px;
+	font-family: fantasy;
+	border-bottom-style:  dotted;
+	border-bottom-width: 7px;
+	width: 260px;
+}
+
+/*informacion personal*/
+
+.mi-foto{
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px #0054B3;
+}
+.titulo-nombre{
+	
+	font-size: 30px;
+	font-family: fantasy;
+	border-bottom-style:  dotted;
+	border-bottom-width: 7px;
+	width: 390px;
+
+}
+.div-informacion-personal{
+	border-style: solid;
+	border-radius: 30px;
+	
+	border-color: blue;
+	/*background-color: green;*/
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+	
+}
+
+
+/*estilos nav*/
+
+.nav-div-1 {
+	background-color: #147CF1;
+	width: 20%;
+	float:left;
+	height: 63px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.titulo-nav{
+	color:black;
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 15px;
+	/*padding-top: 80px;*/
+}
+
+
+
+.nav-div {
+	width: 100%;
+	float:left;
+}
+
+
+.boton{
+	width: 25px;	
+	margin-top: 12.5px;
+}
+
+
+.logo2{
+	width: 25px;
+}
+
+
+
+body {
+	margin: 0;
+	/*esto le quita el margen*/
+	background-color: #147CF1;
+	
+}
+
+.div-nav{
+	width: 100%;
+	background-color: #147CF1;
+
+}
+
+
+/*con esto desaparesco el botonsito shuleador*/
+#btn-menu {
+	display: none;
+}
+
+div label {
+	display: none;
+	/*este display none es por que esto lo queremos en dispositivos moviles*/
+	width: 25px;
+	padding: 5px;
+	padding-top: 8px;
+	border-right:  1px solid black;
+	}
+
+div label:hover {
+	cursor: pointer;
+	/*para que aparesca la manito*/
+	
+}
+
+.menu ul {
+	margin: 0px;
+	list-style:  none;
+	padding: 0;
+	display: flex;
+	/*este flex hace que los li sean cajas flexibles y los coloque en una fila*/
+
+	justify-content: flex-end;*/
+	/*esta linea nos sirve para poner los menus al lado izquierdo*/
+	height: 100px;
+	/*justify-content: center;*/
+	/*esta linea nos sirve para poner los menus en el centro*/
+}
+
+
+/*.menu li{
+	text-align: center;
+	flex-grow: 1;
+}*/
+/*con este logramos otro efecto interesabte distinto*/
+
+ .nav-a{
+	color: black;
+	text-decoration: none;
+	font-size: 19px;
+}
+
+.menu  li   {
+	display: block;
+	padding: 20px 20px;
+	/*border-right: 1px solid white;*/
+	/*el borde de los menus*/
+
+	font-size: 20px;
+}
+
+.menu  li:hover  {
+	background: #006AE1;
+}
+
+
+
+/*codigos para hacer el div responsive*/
+/*cuando su ancho maximo este entre 768 pixeles hacer lo siguiente*/
+@media(max-width: 768px){
+	div label{
+		/*display: block;*/
+		display: inline-block;
+		height: 50px;
+		background-color: black;
+	}
+	
+	div label:hover {
+	cursor: pointer;
+	/*para que aparesca la manito*/
+	background-color: black;
+	}
+
+	.menu {
+		position: absolute;
+		background-color: black;
+		width: 30%;
+		margin-left: -70%; 
+		/*este lo que hace es corrernos el menu en negativo y por eso no lo vemos*/
+		transition: all 0.5s;
+	}
+
+	.nav-div-1{
+		margin-left: -70%;
+	}
+	
+	
+	
+	.menu ul{
+		flex-direction:  column ;
+		/*column-width: -70px;*/
+	}
+	
+	.logo2{
+		padding-left: 100px;
+		width: 25px 250px;
+	}
+
+	.menu li{
+		border-top: 1px solid white;
+	}
+
+	#btn-menu:checked ~ .menu {
+		margin:  0;
+
+	}
+	/*ella rayita rara se hace con el atajo alt 126*/
+
+
+}
+
+
+
+

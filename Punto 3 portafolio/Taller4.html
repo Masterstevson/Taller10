@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="hoja de vida/estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos-talleres.css">
+	<title></title>
+</head>
+<body >
+	<div class="nav-div">
+		<div id="div-nav" class="div-nav">
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><img src="estilos/imagenes/cuadrado.png" class="boton" alt="">
+			</label>				
+			<nav class="menu">
+			<div id="nav-div-1" class="nav-div-1">
+				<p class="titulo-nav">Steven Gahona</p>
+			</div>
+				<ul>					
+					<li><a class="nav-a" href="Taller1.html">Taller 1</a></li>
+					<li><a class="nav-a" href="Taller2.html">Taller 2</a></li>
+					<li><a class="nav-a" href="Taller3.html">Taller 3</a></li>
+					<li><a class="nav-a" href="Taller4.html">Taller 4</a></li>
+					<li><a class="nav-a" href="Taller5.html">Taller 5</a></li>
+					<li><a class="nav-a" href="Taller6.html">Taller 6</a></li>
+
+
+					<li><a class="nav-a"  href="hoja de vida/Informacion-Personal.html" >Hoja de vida</a></li>	
+				</ul>
+			</nav>
+		</div>		
+	</div>
+	<br>
+	<br>
+	
+	<div class="div-taller1">
+		<p class="taller1-p">
+
+			<br>
+			<h2><b>Taller de Arreglos</b></h2>  
+			
+<ol class="ol-talleres">
+	<li>Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:
+	<br>
+[0] = 55	<br>
+[1] = 99	<br>
+[2] = 11	<br>
+[3] = 56	<br>
+[4] = 69	<br>
+	</li>
+	<li>
+		Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo<br>
+Números pares: 2, 4, 6, 8, 10<br>
+Números impares: 1, 3, 5, 7, 9
+	</li>
+	<li>
+		Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.
+Dada la siguiente matriz bidimensional, el cual debe de quemar en el código<br>
+01 02 03 04 05<br>
+06 07 08 09 10<br>
+11 12 13 14 15<br>
+16 17 18 19 20
+	</li>
+	<li>
+		Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional.<br>
+01 02 03 04 05<br>
+10 09 08 07 06<br>
+11 12 13 14 15<br>
+20 19 18 17 16
+	</li>
+	<li>
+		Se debe de imprimir el siguiente cuadro<br>
+		<img src="6.png"><br>
+		El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de cada celda debe estar previamente calculado en una matriz bidimensional la cual cada resultado obedecerá a la fila y columna insertada por el usuario.
+
+	</li>
+</ol>
+		</p>
+		<div class="separador"></div>
+<pre>
+<code>
+	Proceso Punto1
+		Definir vector,num,i Como Entero;
+		Dimension vector[5];
+		
+		
+		para i <- 0 Hasta 4 Hacer
+			Escribir "Escribe un numero";
+			Leer num;
+			vector[i] <- num;
+		FinPara
+		
+		para i <- 0 Hasta 4 Hacer
+			
+			Escribir "[",i,"] = ",vector[i];
+		FinPara
+		
+	FinProceso
+
+</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto2
+		Definir vector,contador,i Como Entero;
+		Dimension vector[20];
+		i <- 0;
+		
+		Mientras i < 20 Hacer
+			
+			vector[i]<-azar(100);
+			i <- i +1;
+		FinMientras
+		
+		Escribir "Números pares:"Sin Saltar;
+		Para i <-0 Hasta 19 Hacer
+			
+			si vector[i] mod 2 = 0 Entonces
+				Escribir vector[i]Sin Saltar;
+				Escribir " "Sin Saltar;
+			FinSi
+			
+		FinPara
+		
+		Escribir "";
+		
+		Escribir "Números impares:"Sin Saltar;
+		Para i <-0 Hasta 19 Hacer
+			
+			si vector[i] mod 2 <> 0 Entonces
+				Escribir vector[i]Sin Saltar;
+				Escribir " "Sin Saltar;
+			
+				
+			FinSi
+			
+		FinPara
+		Escribir "";
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto3
+		Definir x,num,contador Como Entero;
+		
+		Para num <- 1 Hasta 1000 Hacer
+			
+			x<-1;
+			contador<-0;
+			Mientras x<= num Hacer
+				si num mod x = 0 Entonces
+					contador<-contador+1;
+				FinSi
+				x<-x+1;
+			FinMientras
+			si contador = 2 Entonces
+				Escribir num;
+			FinSi
+			
+		FinPara
+	FinProceso
+
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto4
+		Definir fila,columna,matriz Como Entero;
+		
+		Dimension matriz[4,5];
+		
+		
+		matriz[0,0] <- 01;
+		matriz[0,1] <- 02;
+		matriz[0,2] <- 03;
+		matriz[0,3] <- 04;
+		matriz[0,4] <- 05;
+		matriz[1,0] <- 06;
+		matriz[1,1] <- 07;
+		matriz[1,2] <- 08;
+		matriz[1,3] <- 09;
+		matriz[1,4] <- 10;
+		matriz[2,0] <- 11;
+		matriz[2,1] <- 12;
+		matriz[2,2] <- 13;
+		matriz[2,3] <- 14;
+		matriz[2,4] <- 15;
+		matriz[3,0] <- 16;
+		matriz[3,1] <- 17;
+		matriz[3,2] <- 18;
+		matriz[3,3] <- 19;
+		matriz[3,4] <- 20;
+		
+		Para fila <- 0 Hasta 3 Hacer
+			
+			si (fila = 1)o(fila = 3)  Entonces
+				Para columna<-4 Hasta 0 Con Paso -1 Hacer 
+					Escribir matriz[fila,columna]," "Sin Saltar;
+				FinPara
+			SiNo
+				Para columna<-0 Hasta 4 Con Paso 1 Hacer 
+					Escribir matriz[fila,columna]," "Sin Saltar;
+				FinPara
+			FinSi
+			
+			Escribir " ";
+		FinPara
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto5
+		Definir fila,columna,matriz,fila_insertada,columna_insertada Como Entero;
+		
+		Dimension matriz[10,10];
+		
+		matriz[0,0] <- 1;
+		matriz[0,1] <- 2;
+		matriz[0,2] <- 3;
+		matriz[0,3] <- 4;
+		matriz[0,4] <- 5;
+		matriz[0,5] <- 6;
+		matriz[0,6] <- 7;
+		matriz[0,7] <- 8;
+		matriz[0,8] <- 9;
+		matriz[0,9] <- 10;
+		matriz[1,0] <- 2;
+		matriz[1,1] <- 4;
+		matriz[1,2] <- 6;
+		matriz[1,3] <- 8;
+		matriz[1,4] <- 10;
+		matriz[1,5] <- 12;
+		matriz[1,6] <- 14;
+		matriz[1,7] <- 16;
+		matriz[1,8] <- 18;
+		matriz[1,9] <- 20;
+		matriz[2,0] <- 3;
+		matriz[2,1] <- 6;
+		matriz[2,2] <- 9;
+		matriz[2,3] <- 12;
+		matriz[2,4] <- 15;
+		matriz[2,5] <- 18;
+		matriz[2,6] <- 21;
+		matriz[2,7] <- 24;
+		matriz[2,8] <- 27;
+		matriz[2,9] <- 30;
+		matriz[3,0] <- 4;
+		matriz[3,1] <- 8;
+		matriz[3,2] <- 12;
+		matriz[3,3] <- 16;
+		matriz[3,4] <- 20;
+		matriz[3,5] <- 24;
+		matriz[3,6] <- 28;
+		matriz[3,7] <- 32;
+		matriz[3,8] <- 36;
+		matriz[3,9] <- 40;
+		matriz[4,0] <- 5;
+		matriz[4,1] <- 10;
+		matriz[4,2] <- 15;
+		matriz[4,3] <- 20;
+		matriz[4,4] <- 25;
+		matriz[4,5] <- 30;
+		matriz[4,6] <- 35;
+		matriz[4,7] <- 40;
+		matriz[4,8] <- 45;
+		matriz[4,9] <- 50;
+		matriz[5,0] <- 6;
+		matriz[5,1] <- 12;
+		matriz[5,2] <- 18;
+		matriz[5,3] <- 24;
+		matriz[5,4] <- 30;
+		matriz[5,5] <- 36;
+		matriz[5,6] <- 42;
+		matriz[5,7] <- 48;
+		matriz[5,8] <- 54;
+		matriz[5,9] <- 60;
+		matriz[6,0] <- 7;
+		matriz[6,1] <- 14;
+		matriz[6,2] <- 21;
+		matriz[6,3] <- 28;
+		matriz[6,4] <- 35;
+		matriz[6,5] <- 42;
+		matriz[6,6] <- 49;
+		matriz[6,7] <- 56;
+		matriz[6,8] <- 63;
+		matriz[6,9] <- 70;
+		matriz[7,0] <- 8;
+		matriz[7,1] <- 16;
+		matriz[7,2] <- 24;
+		matriz[7,3] <- 32;
+		matriz[7,4] <- 40;
+		matriz[7,5] <- 48;
+		matriz[7,6] <- 56;
+		matriz[7,7] <- 64;
+		matriz[7,8] <- 72;
+		matriz[7,9] <- 80;
+		matriz[8,0] <- 9;
+		matriz[8,1] <- 18;
+		matriz[8,2] <- 27;
+		matriz[8,3] <- 36;
+		matriz[8,4] <- 45;
+		matriz[8,5] <- 54;
+		matriz[8,6] <- 63;
+		matriz[8,7] <- 72;
+		matriz[8,8] <- 81;
+		matriz[8,9] <- 90;
+		matriz[9,0] <- 10;
+		matriz[9,1] <- 20;
+		matriz[9,2] <- 30;
+		matriz[9,3] <- 40;
+		matriz[9,4] <- 50;
+		matriz[9,5] <- 60;
+		matriz[9,6] <- 70;
+		matriz[9,7] <- 80;
+		matriz[9,8] <- 90;
+		matriz[9,9] <- 100;
+		
+		
+		Escribir "Inserte la fila";
+		Leer fila_insertada;
+		Escribir "Inserte la columna";
+		Leer columna_insertada;
+		fila_insertada <- fila_insertada+1;
+		columna_insertada <- columna_insertada+1; 
+		
+		Para fila <- 1 Hasta 10 Hacer
+			
+			Para columna<-1 Hasta 10 Con Paso 1 Hacer 
+				
+				
+				si (fila_insertada=fila)y(columna_insertada=columna) Entonces
+					Escribir "  ",matriz[fila-1,columna-1],"   "Sin Saltar;
+				SiNo
+					Escribir fila," x ",columna,"  " Sin Saltar;
+				FinSi
+				
+			FinPara
+			
+			Escribir " ";
+		FinPara
+	FinProceso
+
+
+	</code>
+</pre>
+<div class="separador"></div>
+<br>
+<br>
+	
+<center>
+	
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7FBBWfkd6VY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<br>
+<br>
+
+</div>
+
+
+<script type="text/javascript">
+		
+function leer(){
+
+	
+}
+
+
+
+</script>
+</body>
+</html>

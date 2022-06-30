@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	
+	<form>
+		<h1 class="titulo1">Formulario contáctenos</h1>
+
+		<!-- nombre correo asunto mensaje -->
+		
+
+		
+		<p>Nombre</p>
+		<input type="text" id="nombre" name="nombres" class="field solo_letras" id="nombres" >
+		<p>Correo</p>
+		<input type="text" class="field solo_letras" name="" id="correo">
+		<p>Asunto</p>
+		<input type="text" class="field solo_letras" name="" id="asunto">
+		<p>Mensjaje</p>
+		<input type="text" class="field solo_letras" name="" id="mensaje">
+
+		
+		
+		
+		
+
+	</form>
+	<p class="center-content">
+		<button name="btnregistrar" class="btn btn-green" id="btnregistrar" onclick="validar()" >Registrarce</button>		
+	</p>
+	<p class="center-content">
+		<button name="" class="btn btn-green" id="" onclick="limpiar()" >Limpiar</button>		
+	</p>
+
+<!-- <script src="js/funciones.js"></script> -->	
+<script type="text/javascript">
+	
+var nombre = document.getElementById("nombre");
+var correo = document.getElementById("correo");
+var asunto = document.getElementById("asunto");
+var mensaje = document.getElementById("mensaje");
+
+
+function validar()
+{
+	// | operador or
+	// || operador y
+
+	var miArray = new Array(4);
+
+	if (nombre.value == '' | correo.value == '' | asunto.value  == ''  | mensaje.value == '' ) 
+	{
+
+		var i=0;
+		if (nombre.value == '') 
+		{
+			miArray[i] = "Nombre";
+			i = i+1;
+		}
+		if (correo.value == '') 
+		{
+			miArray[i] = "Correo";
+			i = i+1;
+		}
+		if (asunto.value == '') 
+		{
+			miArray[i] = "Asunto";
+			i = i+1;
+		}
+		if (mensaje.value == '') 
+		{
+			miArray[i] = "Mensaje";
+			i = i+1;
+		}
+
+
+		alert("Falta la siguiente informacion por escribir: \n"+miArray)
+
+	}else{
+		//console.loggggggggg 
+		console.log("Nombre: "+nombre.value+"\n"+"Correo: "+correo.value+"\n"+"Asunto: "+asunto.value+"\n"+"Mensaje: "+mensaje.value);
+	}
+
+	
+
+	// alert("Nombre: "+nombre.value+"\n"+"Correo: "+correo.value+"\n"+"Asunto: "+asunto.value+"\n"+"Mensaje: "+mensaje.value);
+	
+}
+
+function limpiar()
+{
+	 document.getElementById("nombre").value = "";
+	 document.getElementById("correo").value = "";
+	 document.getElementById("asunto").value = "";
+	 document.getElementById("mensaje").value = "";
+}
+
+</script>
+</body>
+
+</html>

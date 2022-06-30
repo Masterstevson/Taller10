@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="hoja de vida/estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos-talleres.css">
+	<title></title>
+</head>
+<body >
+	<div class="nav-div">
+		<div id="div-nav" class="div-nav">
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><img src="estilos/imagenes/cuadrado.png" class="boton" alt="">
+			</label>				
+			<nav class="menu">
+			<div id="nav-div-1" class="nav-div-1">
+				<p class="titulo-nav">Steven Gahona</p>
+			</div>
+				<ul>					
+					<li><a class="nav-a" href="Taller1.html">Taller 1</a></li>
+					<li><a class="nav-a" href="Taller2.html">Taller 2</a></li>
+					<li><a class="nav-a" href="Taller3.html">Taller 3</a></li>
+					<li><a class="nav-a" href="Taller4.html">Taller 4</a></li>
+					<li><a class="nav-a" href="Taller5.html">Taller 5</a></li>
+					<li><a class="nav-a" href="Taller6.html">Taller 6</a></li>
+
+
+					<li><a class="nav-a"  href="hoja de vida/Informacion-Personal.html" >Hoja de vida</a></li>	
+				</ul>
+			</nav>
+		</div>		
+	</div>
+	<br>
+	<br>
+	
+	<div class="div-taller1">
+		<p class="taller1-p">
+
+			<br>
+			<h2><b>Taller de ciclos</b></h2>  
+			
+<ol class="ol-talleres">
+	<li>Realizar la siguiente figura por medio del ciclo Para
+	</li>
+	<img src="1.png">
+	<li>
+		Realizar la siguiente figura por medio del ciclo Mientras - Hacer
+	</li>
+	<img src="2.png">
+	<li>
+		Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que
+	</li>
+	<img src="3.png">
+	<li>
+		Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:
+	</li>
+	<img src="4.png">
+	<li>
+		Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.
+	</li>
+	<img src="5.png">
+	<li>
+		Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.
+	</li>
+	<li>El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.
+	</li>
+	<li>
+		La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.
+	</li>
+</ol>
+		</p>
+		<div class="separador"></div>
+<pre>
+<code>
+	Proceso Punto1
+	
+		Definir filas,i,j Como Entero;
+		filas <- 8;
+		
+		
+		Para i <- 1 Hasta 10 Con Paso 1 Hacer
+			Para j <- 1 Hasta i Con Paso 1 Hacer
+				Escribir "*" Sin Saltar;
+			FinPara
+			Escribir "";
+		FinPara
+		
+	FinProceso
+</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto2
+		Definir i,j,x Como Entero;
+		i <- 1;
+		x <- 1;
+		j <- 0;
+		
+		
+		Mientras i < 11 Hacer
+			
+			x <- 1;
+			Mientras x < 11-i Hacer
+				Escribir " " Sin Saltar;
+				x <- x +1;	
+			FinMientras
+			j <- 0;
+			Mientras j < i Hacer
+				Escribir "*" Sin Saltar;
+				j <- j+1;
+			FinMientras
+			Escribir "";
+			
+			
+			i <- i + 1;	
+		FinMientras
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto3
+		Definir i,j,x,l Como Entero;
+		i <- 1;
+		x <- 1;
+		j <- 0;
+		l <- 1;
+		
+		Repetir
+			
+			si i < 21 Entonces
+				
+				Si i mod 2 = 0 Entonces
+					i <- i +1;
+				SiNo
+
+					x <- 1;
+					Repetir
+						Escribir " " Sin Saltar;
+			
+						x <- x + 1;
+		
+					Hasta Que x = 22-i
+
+					j <- 0;
+					Repetir
+				
+						Escribir "* " Sin Saltar;
+						j <- j + 1;
+
+					Hasta Que j = i
+			
+					si i = 19 Entonces
+						j <- -2;
+						Escribir " ";
+						Repetir
+					
+							Escribir "* " Sin Saltar;
+							j <- j + 1;
+
+						Hasta Que j = i
+					FinSi
+
+					Escribir " ";
+			
+					i <- i+1;
+				FinSi
+			FinSi
+
+			si i >= 21 Entonces
+				
+				i <- i+1;
+
+				si l mod 2=0 o l=1 Entonces
+					l <- l +1;
+					
+				SiNo
+					
+					si i = 24 Entonces
+
+						x <- 1;
+						Repetir
+							Escribir " " Sin Saltar;
+							
+							x <- x + 1;
+							
+						Hasta Que x = 22-l
+						
+						j <- 0;
+						Repetir
+							
+							Escribir "* " Sin Saltar;
+							j <- j + 1;
+							
+						Hasta Que j = l
+						
+						si i = 19 Entonces
+							j <- -2;
+							Escribir " ";
+							Repetir
+								
+								Escribir "* " Sin Saltar;
+								j <- j + 1;
+								
+							Hasta Que j = i
+						FinSi
+						
+						Escribir " ";
+		
+					SiNo
+						x <- 1;
+						Repetir
+							Escribir " " Sin Saltar;
+							
+							x <- x + 1;
+							
+						Hasta Que x = 22-l
+						
+						j <- 0;
+						Repetir
+							
+							Escribir "* " Sin Saltar;
+							j <- j + 1;
+							
+						Hasta Que j = l
+						
+						si i = 19 Entonces
+							j <- -2;
+							Escribir " ";
+							Repetir
+								
+								Escribir "* " Sin Saltar;
+								j <- j + 1;
+								
+							Hasta Que j = i
+						FinSi
+						
+						Escribir " ";
+
+						l <- l + 1;
+					FinSi
+
+				FinSi
+		
+			FinSi
+			
+
+		Hasta Que i = 30
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto4
+		Definir i,n Como Entero;
+		
+		Escribir "Escriba el numero de la tabla de multiplicar que desee ver";
+		Leer n;
+		
+		Para i <- 1 Hasta 10 Hacer
+			Escribir i," x ",n," = ",n*i;
+		FinPara
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto5
+		Definir ciclo,num Como Entero;
+		Definir persona Como Caracter;
+		persona <- "";
+		ciclo <- 1;
+		Mientras ciclo = 1 Hacer
+			Escribir "Menu de usuario";
+			Escribir "1. Captura nombre";
+			Escribir "2. Saludar persona";
+			Escribir "3. Salir del sistema";
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Escribe tu nombre";
+					Leer persona;
+					Escribir " ";
+				2:
+					Escribir "Hola ",persona;
+					Escribir " ";
+				3:	
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto6
+		Definir nombre,organizacion Como Caracter;
+		Definir telefono,ciclo,num Como Entero;
+		Definir i,repetido Como Entero;
+		Definir nombre_array,organizacion_array Como Caracter;
+		Definir telefono_array Como Entero;
+		Dimension  nombre_array[3];
+		nombre_array[0]<-"";
+		nombre_array[1]<-"";
+		nombre_array[2]<-"";
+		Dimension telefono_array[3];
+		telefono_array[0] <- 000000000000;
+		telefono_array[1] <- 000000000000;
+		telefono_array[2] <- 000000000000;
+		Dimension organizacion_array[3];
+		repetido <- 1;
+		ciclo <- 1;
+		
+		Mientras ciclo = 1 Hacer
+			Escribir "Escriba un numero segun su opcion";
+			Escribir "1. Ingresar contacto";
+			Escribir "2. Consultar contactos";
+			Escribir "3. Eliminar contacto";
+			Escribir "4. Salir del sistema";
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Telefono del contacto";
+					Leer telefono;
+					Escribir "Nombre del contacto";
+					Leer nombre;
+					Escribir "organizació del contacton";
+					Leer organizacion;
+					
+					Para i <- 0 Hasta 2 Hacer
+						si telefono_array[i]=telefono Entonces
+							repetido <- 2;
+							
+		
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						
+						Para i <- 0 Hasta 2 Hacer
+							
+							si nombre_array[i] = "" Entonces
+								
+								telefono_array[i] <- telefono;
+								nombre_array[i] <- nombre;
+								organizacion_array[i] <- organizacion;
+								Escribir "Contacto añadido exitosamente";
+								i <-3;
+							FinSi
+							
+							
+						FinPara
+					SiNo
+						Escribir "Numero ya existente";
+					
+					FinSi
+					
+					Escribir "";
+					repetido <- 1;
+				2:
+					Escribir "Contactos:";
+					Escribir " ";
+					Para i <- 0 Hasta 2 Hacer
+						
+						si nombre_array[i] = "" Entonces
+							
+							repetido <- 1;
+						SiNo
+							Escribir "Nombre: ",nombre_array[i];
+							Escribir "Telefono: ",telefono_array[i];
+							Escribir "Organizacion: ",organizacion_array[i];
+							Escribir " ";
+						FinSi
+						
+						
+					FinPara
+					
+				3:	
+					
+					Escribir "Escribe el telefono del contacto que deseas eliminar";
+					Leer telefono;
+					Para i <- 0 Hasta 2 Hacer
+						si telefono_array[i]=telefono Entonces
+							
+							telefono_array[i] <- 00000000000000;
+							nombre_array[i] <- "";
+							organizacion_array[i] <- "";
+							Escribir "Contacto eliminado exitosamente";
+							Escribir " ";
+							i <-3;
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						Escribir "Este contacto no existe";
+						Escribir "";
+					FinSi
+					repetido <- 1;
+				4:
+					Escribir "Feliz dia";
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+		
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto7
+		Definir telefono,ciclo,num,repetido,i Como Entero;
+		Definir placa,marca,nombre Como Caracter;
+		Definir nombre_array,placa_array,marca_array Como Caracter;
+		Definir telefono_array Como Entero;
+		Dimension telefono_array[5];
+		Dimension nombre_array[5];
+		Dimension marca_array[5];
+		Dimension placa_array[5];
+		placa_array[0]<-"";
+		placa_array[1]<-"";
+		placa_array[2]<-"";
+		placa_array[3]<-"";
+		placa_array[4]<-"";
+		
+		repetido <- 1;
+		ciclo <- 1;
+		Mientras ciclo = 1 Hacer
+			Escribir "Escriba un numero segun su opcion";
+			Escribir "1. Ingresar vehículo al parqueadero";
+			Escribir "2. Consultar si un vehículo esta en el parqueadero";
+			Escribir "3. Retirar vehículo del parqueadero";
+			Escribir "4. Salir del sistema";
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Placa del vehículo";
+					Leer placa;
+					Escribir "Marca del vehículo";
+					Leer marca;
+					Escribir "Nombre del dueño";
+					Leer nombre;
+					Escribir "Telefono del dueño";
+					Leer telefono;
+					
+					Para i <- 0 Hasta 4 Hacer
+						si placa_array[i]=placa Entonces
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						
+						Para i <- 0 Hasta 4 Hacer
+							
+							si placa_array[i] = "" Entonces
+								
+								telefono_array[i] <- telefono;
+								nombre_array[i] <- nombre;
+								placa_array[i] <- placa;
+								marca_array[i] <- marca;
+								Escribir "Vehículo añadido exitosamente";
+								i <-5;
+							FinSi
+							
+							
+						FinPara
+					SiNo
+						Escribir "Vehículo ya existente";
+						
+					FinSi
+					
+					Escribir "";
+					repetido <- 1;
+				2:
+					Escribir "Escriba la placa del vehiculo a buscar";
+					Leer placa;
+					
+					Para i <- 0 Hasta 4 Hacer
+						
+						si placa_array[i] = placa Entonces
+							
+							Escribir "Placa: ",placa_array[i];
+							Escribir "Marca: ",marca_array[i];
+							Escribir "Dueño: ",nombre_array[i];
+							Escribir "Telefono: ",telefono_array[i];
+							repetido <- 2;
+							i <- 5;
+						SiNo
+							repetido <- 1;
+						FinSi
+						
+						
+					FinPara
+					
+					si repetido=2 Entonces
+						Escribir "";
+					SiNo
+						Escribir "Este vehículo no esta en el parqueadero";
+						Escribir "";	
+					FinSi
+					
+					repetido <- 1;
+				3:	
+					repetido <- 1;
+					Escribir "Escribe la placa del vehículo que desea retirar";
+					Leer placa;
+					Para i <- 0 Hasta 4 Hacer
+						si placa_array[i]=placa Entonces
+							
+							telefono_array[i] <- 00000000000000;
+							nombre_array[i] <- "";
+							placa_array[i] <- "";
+							marca_array[i] <- "";
+							Escribir "Vehículo retirado exitosamente";
+							Escribir " ";
+							repetido <- 2;
+							i <-5;
+							
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						Escribir "Este vehículo no esta en el parqueadero";
+						Escribir "";
+					FinSi
+					
+					repetido <- 1;
+				4:
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto8
+		Definir cedula,ciclo,num,repetido,i Como Entero;
+		Definir estado,nombre,nombre_array,estado_array Como Caracter;
+		Definir cedula_array Como Entero;
+		Dimension cedula_array[8];
+		cedula_array[0]<-0;
+		cedula_array[1]<-0;
+		cedula_array[2]<-0;
+		cedula_array[3]<-0;
+		cedula_array[4]<-0;
+		cedula_array[5]<-0;
+		cedula_array[6]<-0;
+		cedula_array[7]<-0;
+		Dimension nombre_array[8];
+		Dimension estado_array[8];
+		
+		repetido <- 1;
+		ciclo <- 1;
+		Mientras ciclo = 1 Hacer
+			Escribir "Escriba un numero segun su opcion";
+			Escribir "1. Registrar datos de usuario";
+			Escribir "2. Consultar usuarios que hayan presentado el curso";
+			Escribir "3. Consultar resultados de la prueba";
+			Escribir "4. Salir del sistema";
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Cedula usuario";
+					Leer cedula;
+					Escribir "Nombre del usuario";
+					Leer nombre;
+					Escribir "Aprobo o desaprobo el curso?";
+					Leer estado;
+					
+					Para i <- 0 Hasta 7 Hacer
+						si cedula_array[i]=cedula Entonces
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						
+						Para i <- 0 Hasta 7 Hacer
+							
+							si cedula_array[i] = 0 Entonces
+								
+								cedula_array[i] <- cedula;
+								nombre_array[i] <- nombre;
+								estado_array[i] <- estado;
+								
+								Escribir "Usuario añadido exitosamente";
+								i <-8;
+							FinSi
+							
+							
+						FinPara
+					SiNo
+						Escribir "Usuario ya existente";
+						
+					FinSi
+					
+					Escribir "";
+					repetido <- 1;
+				2:
+					Escribir "Usuarios:";
+					Escribir " ";
+					Para i <- 0 Hasta 7 Hacer
+						
+						si cedula_array[i] = 0 Entonces
+							
+							repetido <- 1;
+						SiNo
+							Escribir "Nombre: ",nombre_array[i];
+							Escribir "Cedula: ",cedula_array[i];
+							Escribir "Resultado de la prueba: ",estado_array[i];
+							Escribir " ";
+						FinSi
+						
+						
+					FinPara
+				3:	
+					Escribir "Escriba cedula del usuario";
+					Leer cedula;
+					
+					Para i <- 0 Hasta 7 Hacer
+						
+						si cedula_array[i] = cedula Entonces
+							
+							Escribir "Nombre: ",nombre_array[i];
+							Escribir "Cedula: ",cedula_array[i];
+							Escribir "Resultado de la prueba: ",estado_array[i];
+							Escribir " ";
+							repetido <- 2;
+							i <- 8;
+						SiNo
+							repetido <- 1;
+						FinSi
+						
+						
+					FinPara
+					
+					si repetido=2 Entonces
+						Escribir "";
+					SiNo
+						Escribir "Este usuario no ha presentado la prueba de conducción";
+						Escribir "";	
+					FinSi
+					
+					repetido <- 1;
+				4:
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+
+
+<br>
+<br>
+
+<center>
+	
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vzQTnsuYDwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<br>
+<br>
+
+</div>
+
+
+
+</body>
+</html>

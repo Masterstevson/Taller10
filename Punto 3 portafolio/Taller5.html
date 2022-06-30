@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="hoja de vida/estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos-talleres.css">
+	<title></title>
+</head>
+<body >
+	<div class="nav-div">
+		<div id="div-nav" class="div-nav">
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><img src="estilos/imagenes/cuadrado.png" class="boton" alt="">
+			</label>				
+			<nav class="menu">
+			<div id="nav-div-1" class="nav-div-1">
+				<p class="titulo-nav">Steven Gahona</p>
+			</div>
+				<ul>					
+					<li><a class="nav-a" href="Taller1.html">Taller 1</a></li>
+					<li><a class="nav-a" href="Taller2.html">Taller 2</a></li>
+					<li><a class="nav-a" href="Taller3.html">Taller 3</a></li>
+					<li><a class="nav-a" href="Taller4.html">Taller 4</a></li>
+					<li><a class="nav-a" href="Taller5.html">Taller 5</a></li>
+					<li><a class="nav-a" href="Taller6.html">Taller 6</a></li>
+
+
+					<li><a class="nav-a"  href="hoja de vida/Informacion-Personal.html" >Hoja de vida</a></li>	
+				</ul>
+			</nav>
+		</div>		
+	</div>
+	<br>
+	<br>
+	
+	<div class="div-taller1">
+		<p class="taller1-p">
+
+			<br>
+			<h2><b>Taller de Funciones </b></h2>  
+			Organizar todos los puntos del taller de condicionales en modo funciones.<br>
+			Organizar los puntos 6, 7 y 8 del taller de ciclos en modo funciones.<br>
+			Organizar todos los puntos del taller de arreglos en modo funciones.
+		</p>
+		<div class="separador"></div>
+
+		<p class="taller1-p"><b>
+			Puntos Taller 2</b>
+		</p>
+		<div class="separador"></div>
+<pre>
+<code>
+	SubProceso VerificarEdad (num)
+	
+		Si num >= 18 Entonces
+			Escribir "Usted es mayor de edad";
+		FinSi
+	
+	FinSubProceso
+
+	Proceso Punto1
+		Definir edad Como Entero;
+		Escribir "Escriba su edad";
+		Leer edad;
+		
+		VerificarEdad(edad);
+	FinProceso 
+</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso VerificarEdad (num)
+	
+		Si num < 18 Entonces
+			Escribir "Usted aún es un niño(a)";
+		FinSi
+		
+	FinSubProceso
+
+	Proceso Punto2
+		Definir edad Como Entero;
+		Escribir "Escriba su edad";
+		Leer edad;
+		VerificarEdad(edad);
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso VerificarEdad(nombre,apellidos,edad)
+		Si edad >= 18 Entonces
+			Escribir nombre," ",apellidos," usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+		SiNo
+			Escribir nombre," ",apellidos," usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+		FinSi
+	FinSubProceso
+
+	Proceso Punto3
+		Definir nombre,apellidos Como Caracter;
+		Definir edad Como Entero;
+		
+		Escribir "Escriba su nombre";
+		Leer nombre;
+		Escribir "Escriba sus apellidos";
+		Leer apellidos;
+		Escribir "Escriba su edad";
+		Leer edad;
+		
+		VerificarEdad(nombre,apellidos,edad);
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso regresarPelicula
+		Definir  anotacion Como Caracter;
+		Definir anotacion_si_no Como Entero;
+		Escribir "Gracias por devolver la pelicula";
+		Escribir "Escriba un numero si quiere escribir alguna anotacion en caso de que la pelicula se dañara u otra novedad ? ";
+		Escribir "1. Si";
+		Escribir "2. No";
+		Leer anotacion_si_no;
+		Limpiar Pantalla;
+		Si anotacion_si_no = 1 Entonces
+			Escribir "Escribe tu anotacion";
+			Leer anotacion;
+			Escribir "Gracias tendremos en cuenta tu anotacion";
+		SiNo
+			Escribir "Gracias vuelve pronto";
+		FinSi
+	FinSubProceso
+
+	SubProceso consultarPeliculas
+		Escribir "Spiderman.";
+		Escribir "La noche de terror.";
+		Escribir "Batman.";
+	FinSubProceso
+
+	SubProceso llevarPelicula
+		Definir pelicula Como Entero;
+		Escribir "Escriba un numero segun la pelicula que desea alquilar";
+		Escribir "1. Spiderman.";
+		Escribir "2. La noche de terror";
+		Escribir "3. Batman.";
+		Escribir "4. Ninguna";
+		Leer pelicula;
+		Limpiar Pantalla;
+		Segun pelicula Hacer
+			1:
+				Escribir "!Toma y disfruta tu pelicula Spiderman¡";
+			2:
+				Escribir "!Toma y disfruta tu pelicula La noche de terror¡";
+			3:
+				Escribir "!Toma y disfruta tu pelicula Batman¡";
+			4:
+				Escribir "Vuelve cuando quieras";
+		FinSegun
+	FinSubProceso
+
+
+	Proceso Punto4
+		Definir opcion Como Entero;
+		
+		
+		Escribir "Escriba un numero segun la opcion que deses";
+		Escribir "1. Alquilar pelicula";
+		Escribir "2. Consultar peliculas disponibles";
+		Escribir "3. Regresar pelicula";
+		Escribir "4. Salir del sistema";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				
+				llevarPelicula;
+				
+			2:
+				consultarPeliculas;
+			3:
+				
+				regresarPelicula;			
+				
+			4:	
+				Escribir "Vuelve cuando quieras";
+		FinSegun
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso devolverProducto
+		Escribir "Gracias por devolver el producto";
+		Escribir "Vuelva cuando quieras";
+	FinSubProceso
+	SubProceso comprarProducto
+		Definir num Como Entero;
+		Escribir "Escriba un numero segun el producto que desea comprar";
+		Escribir "1. Acetominofen";
+		Escribir "2. Aspirineta";
+		Escribir "3. Noxpirin";
+		Escribir "4. Ninguna";
+		Leer num;
+		Limpiar Pantalla;
+		
+		Segun num Hacer
+			1:
+				Escribir "!Toma y disfruta tu Acetominofen¡";
+			2:
+				Escribir "!Toma y disfruta tu Aspirineta¡";
+			3:
+				Escribir "!Toma y disfruta tu Noxpirin¡";
+			4:
+				Escribir "Vuelve cuando quieras";
+		FinSegun
+	FinSubProceso
+
+	SubProceso consultarProductos
+		Escribir "Acetominofen costo: 7000$";
+		Escribir "Aspirineta costo 120000$";
+		Escribir "Noxpirin costo 1200$";
+	FinSubProceso
+
+	Proceso Punto5
+		Definir opcion,producto Como Entero;
+		
+		
+		Escribir "Escriba un numero segun la opcion que deses";
+		Escribir "1. Comprar producto";
+		Escribir "2. Consultar precios por producto";
+		Escribir "3. Devolver producto";
+		Escribir "4. Salir del sistema";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				
+				comprarProducto;
+			2:
+				consultarProductos;
+			3:
+				devolverProducto;
+				
+			4:	
+				Escribir "Vuelve cuando quieras";
+		FinSegun
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<p class="taller1-p"><b>
+			Puntos Taller 3</b>
+		</p>
+<div class="separador"></div>
+
+<pre>
+	<code>
+	SubProceso interfazUsuario
+		Escribir "Escriba un numero segun su opcion";
+		Escribir "1. Ingresar contacto";
+		Escribir "2. Consultar contactos";
+		Escribir "3. Eliminar contacto";
+		Escribir "4. Salir del sistema";
+	FinSubProceso
+
+	Proceso Punto6
+		Definir nombre,organizacion Como Caracter;
+		Definir telefono,ciclo,num Como Entero;
+		Definir i,repetido Como Entero;
+		Definir nombre_array,organizacion_array Como Caracter;
+		Definir telefono_array Como Entero;
+		Dimension  nombre_array[3];
+		nombre_array[0]<-"";
+		nombre_array[1]<-"";
+		nombre_array[2]<-"";
+		Dimension telefono_array[3];
+		telefono_array[0] <- 000000000000;
+		telefono_array[1] <- 000000000000;
+		telefono_array[2] <- 000000000000;
+		Dimension organizacion_array[3];
+		repetido <- 1;
+		ciclo <- 1;
+		
+		Mientras ciclo = 1 Hacer
+			interfazUsuario;
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Telefono del contacto";
+					Leer telefono;
+					Escribir "Nombre del contacto";
+					Leer nombre;
+					Escribir "organizació del contacton";
+					Leer organizacion;
+					
+					Para i <- 0 Hasta 2 Hacer
+						si telefono_array[i]=telefono Entonces
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						
+						Para i <- 0 Hasta 2 Hacer
+							
+							si nombre_array[i] = "" Entonces
+								
+								telefono_array[i] <- telefono;
+								nombre_array[i] <- nombre;
+								organizacion_array[i] <- organizacion;
+								Escribir "Contacto añadido exitosamente";
+								i <-3;
+							FinSi
+							
+							
+						FinPara
+					SiNo
+						Escribir "Numero ya existente";
+					
+					FinSi
+					
+					Escribir "";
+					repetido <- 1;
+				2:
+					Escribir "Contactos:";
+					Escribir " ";
+					Para i <- 0 Hasta 2 Hacer
+						
+						si nombre_array[i] = "" Entonces
+							
+							repetido <- 1;
+						SiNo
+							Escribir "Nombre: ",nombre_array[i];
+							Escribir "Telefono: ",telefono_array[i];
+							Escribir "Organizacion: ",organizacion_array[i];
+							Escribir " ";
+						FinSi
+						
+						
+					FinPara
+					
+				3:	
+					
+					Escribir "Escribe el telefono del contacto que deseas eliminar";
+					Leer telefono;
+					Para i <- 0 Hasta 2 Hacer
+						si telefono_array[i]=telefono Entonces
+							
+							telefono_array[i] <- 00000000000000;
+							nombre_array[i] <- "";
+							organizacion_array[i] <- "";
+							Escribir "Contacto eliminado exitosamente";
+							Escribir " ";
+							i <-3;
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						Escribir "Este contacto no existe";
+						Escribir "";
+					FinSi
+					repetido <- 1;
+				4:
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+		
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso verificacionRepetido(repetido)
+		si repetido=2 Entonces
+			Escribir "";
+		SiNo
+			Escribir "Este vehículo no esta en el parqueadero";
+			Escribir "";	
+		FinSi
+	FinSubProceso
+
+	SubProceso interfazUsuario
+		Escribir "Escriba un numero segun su opcion";
+		Escribir "1. Ingresar vehículo al parqueadero";
+		Escribir "2. Consultar si un vehículo esta en el parqueadero";
+		Escribir "3. Retirar vehículo del parqueadero";
+		Escribir "4. Salir del sistema";
+	FinSubProceso
+
+	Proceso Punto7
+		Definir telefono,ciclo,num,repetido,i Como Entero;
+		Definir placa,marca,nombre Como Caracter;
+		Definir nombre_array,placa_array,marca_array Como Caracter;
+		Definir telefono_array Como Entero;
+		Dimension telefono_array[5];
+		Dimension nombre_array[5];
+		Dimension marca_array[5];
+		Dimension placa_array[5];
+		placa_array[0]<-"";
+		placa_array[1]<-"";
+		placa_array[2]<-"";
+		placa_array[3]<-"";
+		placa_array[4]<-"";
+		
+		repetido <- 1;
+		ciclo <- 1;
+		Mientras ciclo = 1 Hacer
+			interfazUsuario;
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Placa del vehículo";
+					Leer placa;
+					Escribir "Marca del vehículo";
+					Leer marca;
+					Escribir "Nombre del dueño";
+					Leer nombre;
+					Escribir "Telefono del dueño";
+					Leer telefono;
+					
+					Para i <- 0 Hasta 4 Hacer
+						si placa_array[i]=placa Entonces
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						
+						Para i <- 0 Hasta 4 Hacer
+							
+							si placa_array[i] = "" Entonces
+								
+								telefono_array[i] <- telefono;
+								nombre_array[i] <- nombre;
+								placa_array[i] <- placa;
+								marca_array[i] <- marca;
+								Escribir "Vehículo añadido exitosamente";
+								i <-5;
+							FinSi
+							
+							
+						FinPara
+					SiNo
+						Escribir "Vehículo ya existente";
+						
+					FinSi
+					
+					Escribir "";
+					repetido <- 1;
+				2:
+					Escribir "Escriba la placa del vehiculo a buscar";
+					Leer placa;
+					
+					Para i <- 0 Hasta 4 Hacer
+						
+						si placa_array[i] = placa Entonces
+							
+							Escribir "Placa: ",placa_array[i];
+							Escribir "Marca: ",marca_array[i];
+							Escribir "Dueño: ",nombre_array[i];
+							Escribir "Telefono: ",telefono_array[i];
+							repetido <- 2;
+							i <- 5;
+						SiNo
+							repetido <- 1;
+						FinSi
+						
+						
+					FinPara
+					
+					verificacionRepetido(repetido);
+					
+					repetido <- 1;
+				3:	
+					repetido <- 1;
+					Escribir "Escribe la placa del vehículo que desea retirar";
+					Leer placa;
+					Para i <- 0 Hasta 4 Hacer
+						si placa_array[i]=placa Entonces
+							
+							telefono_array[i] <- 00000000000000;
+							nombre_array[i] <- "";
+							placa_array[i] <- "";
+							marca_array[i] <- "";
+							Escribir "Vehículo retirado exitosamente";
+							Escribir " ";
+							repetido <- 2;
+							i <-5;
+							
+						FinSi					
+					FinPara
+					
+					verificacionRepetido(repetido);
+					
+					repetido <- 1;
+				4:
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso interfazUsuario
+		Escribir "Escriba un numero segun su opcion";
+		Escribir "1. Registrar datos de usuario";
+		Escribir "2. Consultar usuarios que hayan presentado el curso";
+		Escribir "3. Consultar resultados de la prueba";
+		Escribir "4. Salir del sistema";
+	FinSubProceso
+
+	SubProceso verigiacionRepetido(repetido)
+		si repetido=2 Entonces
+			Escribir "";
+		SiNo
+			Escribir "Este usuario no ha presentado la prueba de conducción";
+			Escribir "";	
+		FinSi
+	FinSubProceso
+
+	Proceso Punto8
+		Definir cedula,ciclo,num,repetido,i Como Entero;
+		Definir estado,nombre,nombre_array,estado_array Como Caracter;
+		Definir cedula_array Como Entero;
+		Dimension cedula_array[8];
+		cedula_array[0]<-0;
+		cedula_array[1]<-0;
+		cedula_array[2]<-0;
+		cedula_array[3]<-0;
+		cedula_array[4]<-0;
+		cedula_array[5]<-0;
+		cedula_array[6]<-0;
+		cedula_array[7]<-0;
+		Dimension nombre_array[8];
+		Dimension estado_array[8];
+		
+		repetido <- 1;
+		ciclo <- 1;
+		Mientras ciclo = 1 Hacer
+			interfazUsuario;
+			Leer num;
+			Segun num Hacer
+				1:
+					Escribir "Cedula usuario";
+					Leer cedula;
+					Escribir "Nombre del usuario";
+					Leer nombre;
+					Escribir "Aprobo o desaprobo el curso?";
+					Leer estado;
+					
+					Para i <- 0 Hasta 7 Hacer
+						si cedula_array[i]=cedula Entonces
+							repetido <- 2;
+						FinSi					
+					FinPara
+					
+					si repetido=1 Entonces
+						
+						Para i <- 0 Hasta 7 Hacer
+							
+							si cedula_array[i] = 0 Entonces
+								
+								cedula_array[i] <- cedula;
+								nombre_array[i] <- nombre;
+								estado_array[i] <- estado;
+								
+								Escribir "Usuario añadido exitosamente";
+								i <-8;
+							FinSi
+							
+							
+						FinPara
+					SiNo
+						Escribir "Usuario ya existente";
+						
+					FinSi
+					
+					Escribir "";
+					repetido <- 1;
+				2:
+					Escribir "Usuarios:";
+					Escribir " ";
+					Para i <- 0 Hasta 7 Hacer
+						
+						si cedula_array[i] = 0 Entonces
+							
+							repetido <- 1;
+						SiNo
+							Escribir "Nombre: ",nombre_array[i];
+							Escribir "Cedula: ",cedula_array[i];
+							Escribir "Resultado de la prueba: ",estado_array[i];
+							Escribir " ";
+						FinSi
+						
+						
+					FinPara
+				3:	
+					Escribir "Escriba cedula del usuario";
+					Leer cedula;
+					
+					Para i <- 0 Hasta 7 Hacer
+						
+						si cedula_array[i] = cedula Entonces
+							
+							Escribir "Nombre: ",nombre_array[i];
+							Escribir "Cedula: ",cedula_array[i];
+							Escribir "Resultado de la prueba: ",estado_array[i];
+							Escribir " ";
+							repetido <- 2;
+							i <- 8;
+						SiNo
+							repetido <- 1;
+						FinSi
+						
+						
+					FinPara
+					
+					verigiacionRepetido(repetido);
+					
+					repetido <- 1;
+				4:
+					ciclo <- 2;
+			FinSegun
+			
+		FinMientras
+	FinProceso
+
+	</code>
+</pre>
+
+<div class="separador"></div>
+
+
+<p class="taller1-p"><b>
+			Puntos Taller 4</b>
+		</p>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso lista
+		Definir vector,num,i Como Entero;
+		Dimension vector[5];
+		
+		para i <- 0 Hasta 4 Hacer
+			Escribir "Escribe un numero";
+			Leer num;
+			vector[i] <- num;
+		FinPara
+		
+		para i <- 0 Hasta 4 Hacer
+			
+			Escribir "[",i,"] = ",vector[i];
+		FinPara
+	FinSubProceso
+
+
+	Proceso Punto1
+		
+		lista;
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso paresImparesAlAzar
+		Definir vector,contador,i Como Entero;
+		Dimension vector[20];
+		i <- 0;
+		
+		Mientras i < 20 Hacer
+			
+			vector[i]<-azar(100);
+			i <- i +1;
+		FinMientras
+		
+		Escribir "Números pares:"Sin Saltar;
+		Para i <-0 Hasta 19 Hacer
+			
+			si vector[i] mod 2 = 0 Entonces
+				Escribir vector[i]Sin Saltar;
+				Escribir " "Sin Saltar;
+			FinSi
+			
+		FinPara
+		
+		Escribir "";
+		
+		Escribir "Números impares:"Sin Saltar;
+		Para i <-0 Hasta 19 Hacer
+			
+			si vector[i] mod 2 <> 0 Entonces
+				Escribir vector[i]Sin Saltar;
+				Escribir " "Sin Saltar;
+				
+				
+			FinSi
+			
+		FinPara
+		Escribir "";
+	FinSubProceso
+
+		
+	Proceso Punto2
+
+		paresImparesAlAzar;
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso serieMilNymerosPrimos
+		Definir x,num,contador Como Entero;
+		
+		Para num <- 1 Hasta 1000 Hacer
+			
+			x<-1;
+			contador<-0;
+			Mientras x<= num Hacer
+				si num mod x = 0 Entonces
+					contador<-contador+1;
+				FinSi
+				x<-x+1;
+			FinMientras
+			si contador = 2 Entonces
+				Escribir num;
+			FinSi
+			
+		FinPara
+	FinSubProceso
+
+
+	Proceso Punto3
+		serieMilNymerosPrimos;
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso arrrayFilasInvertidas
+		Definir fila,columna,matriz Como Entero;
+		
+		Dimension matriz[4,5];
+		
+		
+		matriz[0,0] <- 01;
+		matriz[0,1] <- 02;
+		matriz[0,2] <- 03;
+		matriz[0,3] <- 04;
+		matriz[0,4] <- 05;
+		matriz[1,0] <- 06;
+		matriz[1,1] <- 07;
+		matriz[1,2] <- 08;
+		matriz[1,3] <- 09;
+		matriz[1,4] <- 10;
+		matriz[2,0] <- 11;
+		matriz[2,1] <- 12;
+		matriz[2,2] <- 13;
+		matriz[2,3] <- 14;
+		matriz[2,4] <- 15;
+		matriz[3,0] <- 16;
+		matriz[3,1] <- 17;
+		matriz[3,2] <- 18;
+		matriz[3,3] <- 19;
+		matriz[3,4] <- 20;
+		
+		Para fila <- 0 Hasta 3 Hacer
+			
+			si (fila = 1)o(fila = 3)  Entonces
+				Para columna<-4 Hasta 0 Con Paso -1 Hacer 
+					Escribir matriz[fila,columna]," "Sin Saltar;
+				FinPara
+			SiNo
+				Para columna<-0 Hasta 4 Con Paso 1 Hacer 
+					Escribir matriz[fila,columna]," "Sin Saltar;
+				FinPara
+			FinSi
+			
+			Escribir " ";
+		FinPara
+	FinSubProceso
+
+	Proceso Punto4
+		
+		arrrayFilasInvertidas;
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	SubProceso tablaMultiplicar(fila_insertada,columna_insertada)
+		Definir matriz,fila,columna Como Entero;
+		
+		Dimension matriz[10,10];
+		
+		matriz[0,0] <- 1;
+		matriz[0,1] <- 2;
+		matriz[0,2] <- 3;
+		matriz[0,3] <- 4;
+		matriz[0,4] <- 5;
+		matriz[0,5] <- 6;
+		matriz[0,6] <- 7;
+		matriz[0,7] <- 8;
+		matriz[0,8] <- 9;
+		matriz[0,9] <- 10;
+		matriz[1,0] <- 2;
+		matriz[1,1] <- 4;
+		matriz[1,2] <- 6;
+		matriz[1,3] <- 8;
+		matriz[1,4] <- 10;
+		matriz[1,5] <- 12;
+		matriz[1,6] <- 14;
+		matriz[1,7] <- 16;
+		matriz[1,8] <- 18;
+		matriz[1,9] <- 20;
+		matriz[2,0] <- 3;
+		matriz[2,1] <- 6;
+		matriz[2,2] <- 9;
+		matriz[2,3] <- 12;
+		matriz[2,4] <- 15;
+		matriz[2,5] <- 18;
+		matriz[2,6] <- 21;
+		matriz[2,7] <- 24;
+		matriz[2,8] <- 27;
+		matriz[2,9] <- 30;
+		matriz[3,0] <- 4;
+		matriz[3,1] <- 8;
+		matriz[3,2] <- 12;
+		matriz[3,3] <- 16;
+		matriz[3,4] <- 20;
+		matriz[3,5] <- 24;
+		matriz[3,6] <- 28;
+		matriz[3,7] <- 32;
+		matriz[3,8] <- 36;
+		matriz[3,9] <- 40;
+		matriz[4,0] <- 5;
+		matriz[4,1] <- 10;
+		matriz[4,2] <- 15;
+		matriz[4,3] <- 20;
+		matriz[4,4] <- 25;
+		matriz[4,5] <- 30;
+		matriz[4,6] <- 35;
+		matriz[4,7] <- 40;
+		matriz[4,8] <- 45;
+		matriz[4,9] <- 50;
+		matriz[5,0] <- 6;
+		matriz[5,1] <- 12;
+		matriz[5,2] <- 18;
+		matriz[5,3] <- 24;
+		matriz[5,4] <- 30;
+		matriz[5,5] <- 36;
+		matriz[5,6] <- 42;
+		matriz[5,7] <- 48;
+		matriz[5,8] <- 54;
+		matriz[5,9] <- 60;
+		matriz[6,0] <- 7;
+		matriz[6,1] <- 14;
+		matriz[6,2] <- 21;
+		matriz[6,3] <- 28;
+		matriz[6,4] <- 35;
+		matriz[6,5] <- 42;
+		matriz[6,6] <- 49;
+		matriz[6,7] <- 56;
+		matriz[6,8] <- 63;
+		matriz[6,9] <- 70;
+		matriz[7,0] <- 8;
+		matriz[7,1] <- 16;
+		matriz[7,2] <- 24;
+		matriz[7,3] <- 32;
+		matriz[7,4] <- 40;
+		matriz[7,5] <- 48;
+		matriz[7,6] <- 56;
+		matriz[7,7] <- 64;
+		matriz[7,8] <- 72;
+		matriz[7,9] <- 80;
+		matriz[8,0] <- 9;
+		matriz[8,1] <- 18;
+		matriz[8,2] <- 27;
+		matriz[8,3] <- 36;
+		matriz[8,4] <- 45;
+		matriz[8,5] <- 54;
+		matriz[8,6] <- 63;
+		matriz[8,7] <- 72;
+		matriz[8,8] <- 81;
+		matriz[8,9] <- 90;
+		matriz[9,0] <- 10;
+		matriz[9,1] <- 20;
+		matriz[9,2] <- 30;
+		matriz[9,3] <- 40;
+		matriz[9,4] <- 50;
+		matriz[9,5] <- 60;
+		matriz[9,6] <- 70;
+		matriz[9,7] <- 80;
+		matriz[9,8] <- 90;
+		matriz[9,9] <- 100;
+		
+		fila_insertada <- fila_insertada+1;
+		columna_insertada <- columna_insertada+1; 
+		
+		Para fila <- 1 Hasta 10 Hacer
+			
+			Para columna<-1 Hasta 10 Con Paso 1 Hacer 
+				
+				
+				si (fila_insertada=fila)y(columna_insertada=columna) Entonces
+					Escribir "  ",matriz[fila-1,columna-1],"   "Sin Saltar;
+				SiNo
+					Escribir fila," x ",columna,"  " Sin Saltar;
+				FinSi
+				
+			FinPara
+			
+			Escribir " ";
+		FinPara
+	FinSubProceso
+
+	Proceso Punto5
+		Definir fila_insertada,columna_insertada Como Entero;
+		
+		Escribir "Insete la fila";
+		Leer fila_insertada;
+		Escribir "Insete la columna";
+		Leer columna_insertada;
+		
+		tablaMultiplicar(fila_insertada,columna_insertada);
+		
+	FinProceso
+
+	</code>
+</pre>
+
+
+
+
+<br>
+<br>
+
+</div>
+
+
+<script type="text/javascript">
+		
+function leer(){
+
+	
+}
+
+
+
+</script>
+</body>
+</html>

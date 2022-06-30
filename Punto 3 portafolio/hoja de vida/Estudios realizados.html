@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title></title>
+</head>
+<body id="body" onload="colorInicial()"> 
+	<!-- navbar -->
+
+	<div class="nav-div">
+		<div id="div-nav" class="div-nav">
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><img src="estilos/imagenes/cuadrado.png" class="boton" alt="">
+			</label>				
+			<nav class="menu">
+			<div id="nav-div-1" class="nav-div-1">
+				<p class="titulo-nav">Steven Gahona</p>
+				
+				<select class="tema" name="Tema" onchange="changeTema1(this)">
+					<option value="">Tema</option>
+					<option value="#147CF1">Azul</option>
+					<option value="#FF9E1B">Naranja</option>
+					<option value="#FF19E7">Rosado</option>
+					<option value="#9E23FF">Morado</option>
+				</select>
+
+			</div>
+				<ul>
+					<li><a class="nav-a" href="Informacion-Personal.html">Informacion Personal</a></li>
+					<li><a class="nav-a" href="Experiencia laboral.html">Experiencia</a></li>
+					<li><a class="nav-a" href="Referencias personales.html">Referencias personales</a></li>
+					<li><a class="nav-a" href="Referencias familiares.html">Referencias familiares</a></li>	
+					<li><a class="nav-a" href="Estudios realizados.html">Estudios</a></li>
+					<li><a class="nav-a" download href="file:Doc/Steven Andres Gahona Correa - Hoja de Vida.pdf" >Hoja de vida PDF</a></li>	
+				</ul>
+			</nav>
+		</div>		
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	
+	<div class="div-estudios" id="container">
+
+
+		<center>
+			<p class="titulo-referencias-familiares">FORMACIÓN ACADÉMICA</p>
+			<br>
+		</center>
+		<center>
+		<nav class="menu-nav">
+			<ul class="ul">
+				<li class="list">
+					<div class="div-acordeon">
+						<a class="link-acordeon" href="">Profesional SENA</a>
+						<img class="icono" src="icono.png" width="10px">
+					</div>
+					<p class="acordeon-p">
+						Tecnología en Análisis y Desarrollo de Sistemas de 
+						Información. 
+						<br>
+						Año 2019 - 2021
+					</p>				
+				</li>
+				<li class="list">
+					<div class="div-acordeon">
+						<a class="link-acordeon" href="">Profesional CESDE</a>
+						<img class="icono" src="icono.png" width="10px">
+					</div>
+					<p class="acordeon-p">
+						 Tecnología en Animacion 3D.
+						 <br>Año 2016 - 2018
+					</p>				
+				</li>
+
+		</center>
+	</div>
+	<script type="text/javascript" src="Cambio-color.js"></script>
+</body>
+</html>

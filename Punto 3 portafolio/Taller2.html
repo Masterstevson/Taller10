@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="hoja de vida/estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos-talleres.css">
+	<title></title>
+</head>
+<body >
+	<div class="nav-div">
+		<div id="div-nav" class="div-nav">
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><img src="estilos/imagenes/cuadrado.png" class="boton" alt="">
+			</label>				
+			<nav class="menu">
+			<div id="nav-div-1" class="nav-div-1">
+				<p class="titulo-nav">Steven Gahona</p>
+			</div>
+				<ul>					
+					<li><a class="nav-a" href="Taller1.html">Taller 1</a></li>
+					<li><a class="nav-a" href="Taller2.html">Taller 2</a></li>
+					<li><a class="nav-a" href="Taller3.html">Taller 3</a></li>
+					<li><a class="nav-a" href="Taller4.html">Taller 4</a></li>
+					<li><a class="nav-a" href="Taller5.html">Taller 5</a></li>
+					<li><a class="nav-a" href="Taller6.html">Taller 6</a></li>
+
+
+					<li><a class="nav-a"  href="hoja de vida/Informacion-Personal.html" >Hoja de vida</a></li>	
+				</ul>
+			</nav>
+		</div>		
+	</div>
+	<br>
+	<br>
+	
+	<div class="div-taller1">
+		<p class="taller1-p">
+
+			<br>
+			<h2><b>Taller de condicionales</b></h2>  
+			
+<ol class="ol-talleres">
+	<li>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.
+	</li>
+	<li>
+		Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).
+	</li>
+	<li>
+		Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.
+	</li>
+	<li>
+		La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.
+	</li>
+	<li>
+		La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.
+	</li>
+	<li>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.
+	</li>
+	<li>La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</li>
+	<li>
+	El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.
+	</li>
+	<li>El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.
+	</li>
+	<li>
+		El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.
+	</li>
+</ol>
+		</p>
+		<div class="separador"></div>
+<pre>
+<code>
+	Proceso Punto1
+		Definir edad Como Entero;
+		Escribir "Escriba su edad";
+		Leer edad;
+		
+		Si edad >= 18 Entonces
+			Escribir "Usted es mayor de edad";
+		FinSi
+	FinProceso
+</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto2
+		Definir edad Como Entero;
+		Escribir "Escriba su edad";
+		Leer edad;
+		
+		Si edad < 18 Entonces
+			Escribir "Usted aún es un niño(a)";
+		FinSi
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto3
+		Definir nombre,apellidos Como Caracter;
+		Definir edad Como Entero;
+		
+		Escribir "Escriba su nombre";
+		Leer nombre;
+		Escribir "Escriba sus apellidos";
+		Leer apellidos;
+		Escribir "Escriba su edad";
+		Leer edad;
+		
+		Si edad >= 18 Entonces
+			Escribir nombre," ",apellidos," usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+		SiNo
+			Escribir nombre," ",apellidos," usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+		FinSi
+	FinProceso
+
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto4
+		Definir opcion,pelicula,anotacion_si_no Como Entero;
+		Definir  anotacion Como Caracter;
+		
+		Escribir "Escriba un numero segun la opcion que desees";
+		Escribir "1. Alquilar pelicula";
+		Escribir "2. Consultar peliculas disponibles";
+		Escribir "3. Regresar pelicula";
+		Escribir "4. Salir del sistema";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "Escriba un numero segun la pelicula que desea alquilar";
+				Escribir "1. Spiderman.";
+				Escribir "2. La noche de terror";
+				Escribir "3. Batman.";
+				Escribir "4. Ninguna";
+				Leer pelicula;
+				Limpiar Pantalla;
+				
+				Segun pelicula Hacer
+					1:
+						Escribir "!Toma y disfruta tu pelicula Spiderman¡";
+					2:
+						Escribir "!Toma y disfruta tu pelicula La noche de terror¡";
+					3:
+						Escribir "!Toma y disfruta tu pelicula Batman¡";
+					4:
+						Escribir "Vuelve cuando quieras";
+				FinSegun
+				
+			2:
+				Escribir "Spiderman";
+				Escribir "La noche de terror.";
+				Escribir "Batman.";
+			3:
+				Escribir "Gracias por devolver la pelicula";
+				Escribir "Escriba un numero si quiere escribir alguna anotacion en caso de que la pelicula se dañara u otra novedad ? ";
+				Escribir "1. Si";
+				Escribir "2. No";
+				Leer anotacion_si_no;
+				Limpiar Pantalla;
+				
+				
+				Si anotacion_si_no = 1 Entonces
+					Escribir "Escribe tu anotacion";
+					Leer anotacion;
+					Escribir "Gracias tendremos en cuenta tu anotacion";
+				SiNo
+					Escribir "Gracias vuelve pronto";
+				FinSi
+			4:	
+				Escribir "Vuelve cuando quieras";
+		FinSegun
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto5
+		Definir opcion,producto Como Entero;
+		
+		
+		Escribir "Escriba un numero segun la opcion que desees";
+		Escribir "1. Comprar producto";
+		Escribir "2. Consultar precios por producto";
+		Escribir "3. Devolver producto";
+		Escribir "4. Salir del sistema";
+		Leer opcion;
+		Limpiar Pantalla;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "Escriba un numero segun el producto que desea comprar";
+				Escribir "1. Acetominofen";
+				Escribir "2. Aspirineta";
+				Escribir "3. Noxpirin";
+				Escribir "4. Ninguna";
+				Leer producto;
+				Limpiar Pantalla;
+				
+				Segun producto Hacer
+					1:
+						Escribir "!Toma y disfruta tu Acetominofen¡";
+					2:
+						Escribir "!Toma y disfruta tu Aspirineta¡";
+					3:
+						Escribir "!Toma y disfruta tu Noxpirin¡";
+					4:
+						Escribir "Vuelve cuando quieras";
+				FinSegun
+				
+			2:
+				Escribir "Acetominofen costo: 7000$";
+				Escribir "Aspirineta costo 120000$";
+				Escribir "Noxpirin costo 1200$";
+			3:
+				Escribir "Gracias por devolver el producto";
+				Escribir "Vuelva cuando quieras";
+				
+			4:	
+				Escribir "Vuelve cuando quieras";
+		FinSegun
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto6
+	
+		Definir placa,fallo,motocicleta_guardada,informe Como Caracter;
+		Definir aplicacion,opcion,ingreso,moto_areglada,opcion_tecnico Como Entero;
+		Definir fecha_entrada,fecha_salida Como Caracter;
+		moto_areglada <- 0;
+		motocicleta_guardada <- "_____";
+		fecha_entrada <- "Sin fecha";
+		fecha_salida <- "Sin fecha";
+		informe <- "Sin informe";
+		
+		Escribir "Bienvenido al taller de motocicletas";
+		
+		aplicacion <- 1;
+		Mientras aplicacion = 1 Hacer
+			Escribir "Escriba un numero segun su perfil";
+			Escribir "1. Soy usuario";
+			Escribir "2. Soy tecnico de mantenimiento";
+			Escribir "3. Salir del sistema";
+			Leer opcion;
+			Escribir " ";
+			
+			Segun opcion Hacer
+				1:
+					Escribir "Ingrese placa de motocicleta";
+					Leer placa;
+					
+					
+					Escribir "Escriba un numero segun la accion que desee";
+					Escribir "1. Ingresar motocicleta";
+					Escribir "2. Retirar motocicleta";
+					Leer ingreso;
+					Escribir " ";
+					
+					Segun  ingreso  Hacer
+						1:
+							motocicleta_guardada <- placa;
+							Escribir "Describa la falla de su motocicleta";
+							leer fallo;
+							Escribir "Escriba la fecha ingreso de su motocicleta";
+							leer fecha_entrada;
+							Escribir "Su motocicleta a sido registrada exitosamente";
+							Escribir " ";
+					    2:
+						si placa = motocicleta_guardada Entonces
+							
+							si moto_areglada=1 Entonces
+								
+								Escribir "Informe:";
+								Escribir informe;
+								Escribir "Escriba la fecha retiro de su motocicleta";
+								leer fecha_salida;
+								Escribir "Puede llevarse su motocicleta vuelva cuando desee";
+								Escribir " ";
+							SiNo
+								Escribir "No puede retirar su moto aun esta en mantenimiento";
+								Escribir " ";
+							FinSi
+							
+						SiNo
+							Escribir "Esta motocicleta no esta en el taller";
+							Escribir " ";
+						FinSi
+					FinSegun
+				
+					
+					
+				2:
+					
+					Escribir "Ingrese placa de motocicleta";
+					Leer placa;
+					si placa=motocicleta_guardada Entonces
+						
+						Escribir "Escriba un numero segun la accion que desee";
+						Escribir "1. Producir informe de reparacion a la moto";
+						Escribir "2. ver registros de la moto";
+						Leer opcion_tecnico;
+						Escribir " ";
+						
+						Segun opcion_tecnico Hacer
+							1:
+								Escribir "Escriba el informe de mantenimiento";
+								Leer informe;
+								moto_areglada <- 1;
+								Escribir "Accion exitosa ";
+								Escribir " ";
+							2:	
+								Escribir "Fecha entrada: ",fecha_entrada;
+								Escribir "Fecha salida: ",fecha_salida;
+								Escribir "Informe tecnico: ",informe;
+								Escribir "fallos descritos por el usuario: ",fallo;
+								Escribir " ";
+						FinSegun
+						
+					SiNo
+						Escribir "Esta motocicleta no esta en el taller";
+						Escribir " ";
+					FinSi
+				3:	
+					aplicacion <- 2;
+					Escribir "Feliz dia";			
+			FinSegun
+		FinMientras
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto7
+		Definir peso,estatura,imc Como Real;
+		
+		Escribir "Escriba su peso en kilogramos";
+		Leer peso;
+		Escribir "Escriba estatura en metros";
+		Leer estatura;
+		
+		imc <- peso/(estatura*estatura);
+		
+		Escribir "Peso en kilogramos: ",peso;
+		Escribir "Estatura en metros: ",estatura;
+		Escribir "IMC: ",imc;
+		
+		Escribir "Estado segun su IMC:";
+		si imc < 18.5 Entonces
+			Escribir "Bajo peso";
+		SiNo 
+			si imc < 24.9 Entonces
+				Escribir "Normal";
+			SiNo
+				si imc < 29.9 Entonces
+					Escribir "Sobrepeso";
+				SiNo
+					si imc > 29.9 Entonces
+						Escribir "Obesidad";
+					FinSi
+				FinSi
+			FinSi
+			
+		FinSi
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto8
+		Definir aplicacion,opcion Como Entero;
+		Definir por_arequipe,por_chocolate,por_vainilla Como Entero;
+		Definir por_arequipe_pedido,por_chocolate_pedido,por_vainilla_pedido Como Entero;
+		Definir por_chocolate_venta,por_arequipe_venta,por_vainilla_venta Como Entero;
+		Definir chocolate_decoracion,arequipe_decoracion,vainilla_decoracion Como Entero;
+		Definir total Como Real;
+		por_arequipe <- 0;
+		por_chocolate <- 0;
+		por_vainilla <- 0;
+		por_chocolate_venta <- 0;
+		por_arequipe_venta <- 0;
+		por_vainilla_venta <- 0;
+		chocolate_decoracion <- 0;
+		arequipe_decoracion <- 0;
+		vainilla_decoracion <- 0;
+		
+		Escribir "Buenos dias Don Carlos bienvenido al sistema";
+		aplicacion <- 1;
+		Mientras aplicacion = 1 Hacer
+			Escribir "Escriba un numero segun la opcion que desee";
+			Escribir "1. Registrar pedidos";
+			Escribir "2. Registrar tortas disponibles para hoy";
+			Escribir "3. Consultar ventas registradas de hoy";
+			Escribir "4. Salir del sistema";
+			Leer opcion;
+			
+			Segun opcion Hacer
+				1:
+					Escribir "Escriba numero pedidos de porciones de chocolate";
+					Leer por_chocolate_pedido;
+					si por_chocolate_pedido > por_chocolate Entonces
+						Escribir "No hay suficientes porciones de chocolate";
+						Escribir "Porciones disponibles ",por_chocolate;
+						Escribir "Intenta mas tarde con un pedido menor";
+						Escribir " ";
+					SiNo
+						por_chocolate_venta <- por_chocolate_pedido + por_chocolate_venta;
+						por_chocolate <- por_chocolate - por_chocolate_pedido;
+						
+						Escribir "Cuantas tienen decoracion?";
+						Leer chocolate_decoracion;
+						
+						Escribir "Registro exitoso";
+					FinSi
+					
+					Escribir "Escriba numero pedidos de porciones de arequipe";
+					Leer por_arequipe_pedido;
+					si por_arequipe_pedido > por_arequipe Entonces
+						Escribir "No hay suficientes porciones de arequipe";
+						Escribir "Porciones disponibles ",por_arequipe;
+						Escribir "Intenta mas tarde con un pedido menor";
+						Escribir " ";
+					SiNo
+						por_arequipe_venta <- por_arequipe_pedido + por_arequipe_venta;
+						por_arequipe <- por_arequipe - por_arequipe_pedido;
+						
+						Escribir "Cuantas tienen decoracion?";
+						Leer arequipe_decoracion;
+						
+						Escribir "Registro exitoso";
+					FinSi
+					
+					Escribir "Escriba numero pedidos de porciones de vainilla";
+					Leer por_vainilla_pedido;
+					si por_vainilla_pedido > por_vainilla Entonces
+						Escribir "No hay suficientes porciones de vainilla";
+						Escribir "Porciones disponibles ",por_vainilla;
+						Escribir "Intenta mas tarde con un pedido menor";
+						Escribir " ";
+					SiNo
+						por_vainilla_venta <- por_vainilla_pedido + por_vainilla_venta;
+						por_vainilla <- por_vainilla - por_vainilla_pedido;
+						
+						Escribir "Cuantas tienen decoracion?";
+						Leer vainilla_decoracion;
+						
+						Escribir "Registro exitoso";
+					FinSi
+					
+					
+				2:
+					Escribir "Cuantas porciones de torta de chocolate tiene disponibles para hoy?";
+					Leer por_chocolate;
+					Escribir "Cuantas porciones de torta de arequipe tiene disponibles para hoy?";
+					Leer por_arequipe;
+					Escribir "Cuantas porciones de torta de vainilla tiene disponibles para hoy?";
+					Leer por_vainilla;
+					
+					Escribir "Registro exitoso";
+				3:	
+					Escribir "Costo porcion de chocolate 500$";
+					Escribir "Costo porcion de arequipe 400$";
+					Escribir "Costo porcion de vainilla 450$";
+					Escribir "Costo decoracion 50$";
+					Escribir " ";
+					Escribir "Total porciones chocolate ",por_chocolate_venta*500,"$";
+					Escribir "Total decoraciones porciones chocolate ",chocolate_decoracion*50,"$";
+					
+					Escribir "Total porciones arequipe ",por_arequipe_venta*400,"$";
+					Escribir "Total decoraciones porciones arequipe ",arequipe_decoracion*50,"$";
+					
+					Escribir "Total porciones vainilla ",por_vainilla_venta*450,"$";
+					Escribir "Total decoraciones porciones vainilla ",vainilla_decoracion*50,"$";
+					
+					total <- por_chocolate_venta*500 + por_arequipe_venta*400 + por_vainilla_venta*450 + chocolate_decoracion*50 + vainilla_decoracion*50 + arequipe_decoracion*50;
+					Escribir "Total ganancias ",total,"$";
+					
+					Escribir " ";
+				4:	
+					Escribir "Feliz dia";
+					aplicacion <- 2;
+			FinSegun
+		FinMientras
+			
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto9
+		Definir area_triangulo,area_rectangulo,area_trapecio Como Real;
+		Definir altura,base,base_menor Como Real;
+		Definir opcion Como Entero;
+		
+		
+		
+		
+		Escribir "Escriba un numero segun la accion que desee";
+		Escribir "1. Calcular area rectangulo";
+		Escribir "2. Calcular area triangulo";
+		Escribir "3. Calcular area trapecio";
+		Leer opcion;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "Escriba altura del rectangulo";
+				leer altura;
+				Escribir "Escriba base del rectangulo";
+				Leer base;
+				
+				area_rectangulo <- base * altura;
+				
+				Escribir "El area del rectangulo es igual a ",area_rectangulo," unidades cuadradas";
+				
+			2:
+				Escribir "Escriba altura del traingulo";
+				leer altura;
+				Escribir "Escriba base del traingulo";
+				Leer base;
+				
+				area_triangulo <- (base * altura)/2;
+				
+				Escribir "El area del triangulo es igual a ",area_triangulo," unidades cuadradas";
+			3:	
+				Escribir "Escriba altura del trapecio";
+				leer altura;
+				Escribir "Escriba base mayor del trapecio";
+				Leer base;
+				Escribir "Escriba base menor del trapecio";
+				Leer base_menor;
+				
+				area_trapecio <- ((base + base_menor) * altura)/2;
+				
+				Escribir "El area del trapecio es igual a ",area_trapecio," unidades cuadradas";
+		FinSegun
+		
+	FinProceso
+	</code>
+</pre>
+<div class="separador"></div>
+<pre>
+	<code>
+	Proceso Punto10
+		Definir titular Como Caracter;
+		Definir cantidad,cantidad_ingresada Como Real;
+		Definir aplicacion,opcion Como Entero;
+		cantidad <- 0;
+		
+		Escribir "Bienvenido a su banco fiel";
+		Escribir "Ingrese nombre titular cuenta";
+		leer titular;
+		
+		aplicacion <- 1;
+		Mientras aplicacion = 1 Hacer
+			Escribir "Escriba un numero segun la opcion que desee";
+			Escribir "1. Retirar saldo";
+			Escribir "2. Ingresar saldo";
+			Escribir "3. Consultar saldo";
+			Escribir "4. Salir del sistema";
+			Leer opcion;
+			Segun opcion Hacer
+				1:
+					Escribir "Cuanto dinero desea retirar?";
+					Leer cantidad_ingresada;
+					
+					si cantidad_ingresada>cantidad Entonces
+						Escribir "Fondos insuficientes vuelva a intentarlo";
+						Escribir " ";
+					SiNo
+						Escribir "Retiro exitoso";
+						Escribir " ";
+						cantidad <- cantidad - cantidad_ingresada;
+					FinSi
+				2:
+					Escribir "Cuanto dinero desea ingresar?";
+					Leer cantidad_ingresada;
+				
+					
+					si cantidad_ingresada < 0 Entonces
+						Escribir "No puede insertar valores negativos vuelvalo a intentar";
+						Escribir " ";
+					SiNo
+						cantidad <- cantidad + cantidad_ingresada;
+						Escribir "Ingreso exitoso";
+						Escribir " ";
+					FinSi
+					
+				3:	
+					Escribir "Su saldo es: ",cantidad;
+					Escribir " ";
+				4:	
+					Escribir "Gracias por confiar en nosotros";
+					Escribir "Feliz dia";
+					aplicacion <- 2;
+			FinSegun
+		FinMientras
+		
+	FinProceso
+
+	</code>
+</pre>
+<div class="separador"></div>
+<br>
+<br>
+
+<center>
+	
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f0WTlbAuN38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<br>
+<br>
+
+</div>
+
+
+
+</body>
+</html>
